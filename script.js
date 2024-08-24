@@ -3,5 +3,7 @@ setInterval(() => {
 }, 1000);
 
 function hey() {
+    el=document.documentElement
+    el.requestFullscreen.call(el)
     document.getElementById('date').innerHTML ='<img style=" width:5vh;" src="assets/pin.png">' + Date().split(' ')[2] + ' ' + Date().split(' ')[1] + ' ' + Date().split(' ')[3]+'<img style=" width:5vh; "src="assets/pin.png">' ;
 }

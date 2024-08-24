@@ -3,7 +3,7 @@ body {
     height: 97vh;
     padding: 2px;
     background-size: cover;
-    background-image: url(/assets/bg.jpg);
+    background-image: url(assets/bg.jpg);
 }
 html{
     background-color: wheat;

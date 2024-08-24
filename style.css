@@ -1,31 +1,39 @@
 body {
     padding: 2px;
+    background-image: url(/assets/bg.jpg);
 }
-
+html{
+    background-color: wheat;
+    padding: 4px;
+    overflow: hidden;
+}
 .header {
     display: flex;
     justify-content: center;
 }
 
 .head {
+    background: white;
     font-family: sans-serif;
-    font-size: 4vh;
+    font-size: 6vh;
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 4vh;
+    width: 6vh;
 }
 
 .content {
-    height: 90vh;
+    height: 87vh;
     display: flex;
     align-items: center;
 }
 
 .main-image {
+   
     width: 70vw;
+    max-height: 75vh;
     box-shadow: -2px 3px 8px black;
     border-radius: 10px;
     border: solid;
@@ -33,7 +41,7 @@ body {
 
 .time {
     top: 0;
-    right: 6px;
+    right: 25px;
     display: flex;
     position: fixed;
     height: 100vh;
@@ -43,10 +51,11 @@ body {
 }
 
 .date-time {
+    background-color: whitesmoke;
     display: flex;
     box-shadow: -2px 3px 8px black;
     border-radius: 10px;
     border: solid;
     font-size: 4vh;
-    justify-content: center;
+    justify-content: space-between;
 }

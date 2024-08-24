@@ -32,7 +32,24 @@ html{
     display: flex;
     align-items: center;
 }
-
+.img1{
+    position: absolute;
+}
+.pin{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pin2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .main-image {
    
     width: 70vw;

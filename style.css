@@ -54,7 +54,7 @@ html{
 }
 .main-image {
    
-    width: 70vw;
+    width: 60vw;
     max-height: 75dvh;
     box-shadow: 4px 3px 8px black;
     border-radius: 10px;
@@ -67,7 +67,7 @@ html{
     display: flex;
     position: fixed;
     height: 100dvh;
-    width: 25vw;
+    width: 35vw;
     flex-direction: column;
     justify-content: center;
 }

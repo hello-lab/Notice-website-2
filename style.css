@@ -1,13 +1,13 @@
 body {
     box-shadow: inset 0 0 20px 6px black;
-    height: 97dvh;
+    height: 97vh;
     padding: 2px;
     background-size: cover;
     background-image: url(assets/bg.jpg);
 }
 html{
     background-color: wheat;
-    padding: 1dvh;
+    padding: 1vh;
     overflow: hidden;
 }
 .header {
@@ -19,18 +19,18 @@ html{
 .head {
     background: white;
     font-family: sans-serif;
-    font-size: 6dvh;
+    font-size: 6vh;
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 6dvh;
+    width: 6vh;
 }
 
 .content {
-    padding: 1dvh;
-    height: 87dvh;
+    padding: 1vh;
+    height: 87vh;
     display: flex;
     align-items: center;
 }
@@ -55,7 +55,7 @@ html{
 .main-image {
    
     width: 60vw;
-    max-height: 75dvh;
+    max-height: 75vh;
     box-shadow: 4px 3px 8px black;
     border-radius: 10px;
     border: solid;
@@ -66,7 +66,7 @@ html{
     right: 2vw;
     display: flex;
     position: fixed;
-    height: 100dvh;
+    height: 100vh;
     width: 35vw;
     flex-direction: column;
     justify-content: center;
@@ -78,13 +78,13 @@ html{
     box-shadow: -2px 3px 8px black;
     border-radius: 10px;
     border: solid;
-    font-size: 4dvh;
+    font-size: 4vh;
     justify-content: space-between;
 }
 
 
 @media screen and (max-height: 2000px) {
     body {
-        height: 96.5dvh;
+        height: 96.5vh;
     }
   }

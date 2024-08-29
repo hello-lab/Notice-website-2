@@ -91,6 +91,6 @@ height: 6vh;
 
 @media screen and (max-height: 2000px) {
     body {
-        height: 95vh;
+        height: 95.5vh;
     }
   }

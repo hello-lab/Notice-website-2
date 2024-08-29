@@ -1,10 +1,45 @@
-setInterval(() => {
-    document.getElementById('clock').innerHTML ='<img  class="pin"  src="assets/pin.png">' +Date().split(' ')[4]+'<img  class="pin"  src="assets/pin.png">';
-}, 1000);
+
+async function syncTime() {
+    try {
+        const url = 'https://timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata';
+        const response = await fetch(url);
+        const data = await response.json();
+        const date = new Date(data.dateTime); 
+        console.log(date)
+        if (date=='Invalid Date')
+            return new Date()
+        return date;
+    } catch (error) {
+        console.error("Error fetching time:", error);
+        return new Date(); 
+    }
+}
+
+
+function formatTime(date) {
+    return date.toTimeString().split(' ')[0];
+}
+
+
+async function updateClock() {
+    let date = await syncTime(); 
+
+    setInterval(() => {
+        date.setSeconds(date.getSeconds() + 1); 
+        document.getElementById('clock').innerHTML =
+            '<img class="pin" src="assets/pin.png">' + formatTime(date) + '<img class="pin" src="assets/pin.png">';
+    }, 1000);
+}
+
+updateClock();
+
+
+
+
 
 function hey() {
-    el=document.documentElement
-    el.requestFullscreen.call(el)
+
+   
     const month = {
         Jan: 1,
   Feb: 2,

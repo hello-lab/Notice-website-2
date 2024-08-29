@@ -27,3 +27,11 @@ function hey() {
 
     document.getElementById('date').innerHTML ='<img  class="pin"  src="assets/pin.png">' + Date().split(' ')[2] + '/' + d + '/' + Date().split(' ')[3].substring(2)+'<img  class="pin" src="assets/pin.png">' ;
 }
+function badtouch(){
+    el=document.documentElement
+    if (!document.webkitIsFullScreen){
+    el.requestFullscreen.call(el)}
+    else{
+        document.exitFullscreen()
+    }
+}

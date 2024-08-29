@@ -25,5 +25,5 @@ function hey() {
     if (d<10)
         d="0"+d
 
-    document.getElementById('date').innerHTML ='<img  class="pin"  src="assets/pin.png">' + Date().split(' ')[2] + '/' + d + '/' + Date().split(' ')[3]+'<img  class="pin" src="assets/pin.png">' ;
+    document.getElementById('date').innerHTML ='<img  class="pin"  src="assets/pin.png">' + Date().split(' ')[2] + '/' + d + '/' + Date().split(' ')[3].substring(2)+'<img  class="pin" src="assets/pin.png">' ;
 }
